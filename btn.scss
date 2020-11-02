@@ -1,0 +1,54 @@
+@import"variables.scss";
+
+.btn,
+.btm:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 2rem 4rem;
+    background-color: green;
+    margin: 1rem auto;
+    font-size: 2rem;
+    border-radius: 20rem;
+    transition: all .2s;
+    position: relative;
+    //border-radius not working? ask in class//
+}
+
+.btn-green{
+    background-color: green;
+    color: #000000;
+
+}
+.btn-green::after{
+    background-color: green;
+    color: #000000;
+}
+.btn:hover{
+    background-color: black;
+    color:green;
+    transform: translateY(-2px);
+    box-shadow: 0 10px .5rem rgba($color: #000000, $alpha: .2);
+
+    
+}
+.bttn::after{
+    content: "";
+    display: inline;
+    height: 100%;
+    width: 100%;
+    border-radius:20rem;
+    position: absolute;
+    top: 0;
+    left: 9;
+    z-index: -1;
+    transition:all 0.2s;
+
+
+}
+
+.bttn:active{
+    transform: translateY(-1px);
+    transform: scaleX(1.5) scaleY(1.6);
+    box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.2);
+}
